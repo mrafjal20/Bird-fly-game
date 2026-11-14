@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flappy Bird Game</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <div class="game">
-    <img class="bird-png" src="./cute-bird-flying-cartoon-vector-icon-illustration-animal-nature-icon-isolated-flat-vector_138676-13886-removebg-preview.png ">
-  </div>
-  <script src="script.js"></script>
+
+    <div class="game">
+
+        <div class="game-header">
+            <h2>FLAPPY BIRD</h2>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+
+        <img
+            class="bird-png"
+            src="./cute-bird-flying-cartoon-vector-icon-illustration-animal-nature-icon-isolated-flat-vector_138676-13886-removebg-preview.png"
+            alt="Bird"
+        >
+
+        <div class="game-overlay" id="overlay">
+            <div class="game-card">
+                <h1 id="game-title">Flappy Bird</h1>
+
+                <p id="game-message">
+                    Press SPACE or TAP to start the game.
+                </p>
+
+                <button id="start-btn">Start Game</button>
+            </div>
+        </div>
+
+        <div class="ground"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
